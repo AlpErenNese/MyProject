@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style media="screen">
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        overflow-x: hidden;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        align-items: center;
+    }
+    header{
+        background: #0066cc;
+        height: 70px;
+        grid-column: 1/-1;
+    }
+    section{
+        height: 400px;
+        background: #cccc;
+    }
+    aside{
+        height: 400px;
+    background: #66ff66;
+        min-width: 1300px;
+    }
+    footer{
+        height: 200px;
+        background: #333;
+        grid-column: 1/-1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+
+        <section></section>
+        <section></section>
+        <section></section>
+
+        <aside></aside>
+
+
+        <footer></footer>
+    </div>
+</body>
+</html>
